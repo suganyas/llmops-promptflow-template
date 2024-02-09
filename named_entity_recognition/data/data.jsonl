@@ -13,3 +13,4 @@
 {"text": "Mary Jane Watson and Peter Parker are characters in the Spider-Man series.", "entity_type":"people's full name", "results":"Mary Jane Watson, Peter Parker"}
 {"text": "The famous physicists, Albert Einstein and Isaac Newton, made significant contributions to the field of physics.", "entity_type":"people's full name", "results":"Isaac Newton, Albert Einstein"}
 {"text": "The Eiffel Tower is an iconic landmark in Paris.", "entity_type":"people's full name", "results":"None"}
+{"text": "Let's update the data set for training.", "entity_type":"people's full name", "results":"None"}
