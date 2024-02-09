@@ -67,7 +67,7 @@ def prepare_and_execute(
 
     runtime = config["RUNTIME_NAME"]
     eval_flow_path = config["EVALUATION_FLOW_PATH"]
-    experiment_name = f"{flow_to_execute}_{stage}""_1"
+    experiment_name = f"{flow_to_execute}_{stage}"
 
     eval_flows = eval_flow_path.split(",")
 
