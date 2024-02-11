@@ -1,6 +1,6 @@
 {
     "experiment": {
-        "text": "${data.text}", 
+        "text": "${data.text}_ol", 
         "entity_type": "${data.entity_type}"
     },
     "evaluation": {
