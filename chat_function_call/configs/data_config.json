@@ -5,7 +5,7 @@
             "ENV_NAME": "pr",
             "DATA_PURPOSE": "pr_data",
             "DATA_PATH":"data/data.jsonl",
-            "DATASET_NAME":"temp_dataset",
+            "DATASET_NAME":"temp_dataset_chat",
             "DATASET_DESC":"this dataset is for pr validation only"
         },
         {
