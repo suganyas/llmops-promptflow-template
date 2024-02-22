@@ -1,0 +1,35 @@
+name: chat_function_call_pr_dev_pipeline
+
+on:
+  workflow_call:
+    inputs:
+      env_name:
+        type: string
+        description: "Execution Environment"
+        required: true
+        default: "dev"
+      flow_type:
+        type: string
+        description: "The flow usecase to execute"
+        required: true
+        default: "chat_function_call"
+  pull_request:
+    branches:
+      - main
+      - development
+    paths:
+      - '.github/**'
+      - 'llmops/**'
+      - 'chat_function_call/**'
+
+#=====================================
+# Execute platform_pr_dev_workflow workflow for experiment, evaluation and deployment of flows
+#=====================================
+jobs:
+  execute-platform-pr-workflow:
+    uses: ./.github/workflows/platform_pr_dev_workflow.yml
+    with:
+      env_name: ${{ inputs.env_name || 'pr'}}
+      flow_type: ${{ inputs.flow_type || 'chat_function_call' }}
+    secrets:
+      azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}

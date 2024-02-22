@@ -1,0 +1,29 @@
+{
+    "datasets":[
+        {
+            "PROMPT_FLOW_CONFIG_NAME": "chat_function_call",
+            "ENV_NAME": "pr",
+            "DATA_PURPOSE": "pr_data",
+            "DATA_PATH":"data/data.jsonl",
+            "DATASET_NAME":"temp_dataset",
+            "DATASET_DESC":"this dataset is for pr validation only"
+        },
+        {
+            "PROMPT_FLOW_CONFIG_NAME": "chat_function_call",
+            "ENV_NAME": "dev",
+            "DATA_PURPOSE": "test_data",
+            "DATA_PATH":"data/eval_data.jsonl",
+            "DATASET_NAME":"chat_function_call_test",
+            "RELATED_EXP_DATASET": "chat_function_call_train",
+            "DATASET_DESC":"this dataset is for evaluating flows"
+        },
+        {
+            "PROMPT_FLOW_CONFIG_NAME": "chat_function_call",
+            "ENV_NAME": "dev",
+            "DATA_PURPOSE": "training_data",
+            "DATA_PATH":"data/data.jsonl",
+            "DATASET_NAME":"chat_function_call_train",
+            "DATASET_DESC":"this dataset is for prompt experiments"
+        }
+    ]
+}
