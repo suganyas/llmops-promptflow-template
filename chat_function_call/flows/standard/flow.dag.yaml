@@ -63,5 +63,5 @@ nodes:
     function_call: auto
     question: ${inputs.question}
     chat_history: ${inputs.chat_history}
-  connection: open_ai_connection
+  connection: aoai
   api: chat
