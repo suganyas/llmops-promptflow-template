@@ -5,11 +5,18 @@
         "question": "What is the weather like in Boston?"
       },
       "outputs": {
-        "answer": "{\"forecast\":[\"sunny\",\"windy\"],\"location\":\"Boston\",\"temperature\":\"72\",\"unit\":\"fahrenheit\"}",
+        "answer": {
+          "forecast": ["sunny", "windy"],
+          "location": "Boston",
+          "temperature": "72",
+          "unit": "fahrenheit"
+        },
         "llm_output": {
           "content": null,
           "function_call": {
-            "arguments": "{\n  \"location\": \"Boston\"\n}",
+            "arguments": {
+              "location": "Boston"
+            },
             "name": "get_current_weather"
           },
           "role": "assistant"
