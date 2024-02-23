@@ -1,12 +1,12 @@
 {
     "experiment": {
-        "text": "${data.text}_ol", 
-        "entity_type": "${data.entity_type}"
+        "question": "${data.question}",
+        "chat_history": "${data.chat_history}"
     },
     "evaluation": {
         "evaluation": {
-            "ground_truth": "${data.results}",
-            "entities": "${run.outputs.entities}"
+            "groundtruth": "${data.groudtruth}",
+            "prediction": "${data.prediction}"
         }
     }
 
