@@ -3,8 +3,9 @@
             "chat_history": [
               {
                 "inputs": {
-                  "question": "${data.chat_history[0].inputs.question}",
-                  "outputs": {
+                  "question": "${data.chat_history[0].inputs.question}"
+                },
+                "outputs": {
                     "answer": "${data.chat_history[0].outputs.answer}",
                     "llm_output": {
                       "content": "${data.chat_history[0].outputs.llm_output.content}",
@@ -16,7 +17,6 @@
                     }
                   }
                 }
-              }
             ],
             "question": "${data.question}"
     },
