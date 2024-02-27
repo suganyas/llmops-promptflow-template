@@ -1,11 +1,8 @@
-$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
 inputs:
   groundtruth:
     type: string
-    default: groundtruth
   prediction:
     type: string
-    default: prediction
 outputs:
   results:
     type: string
@@ -27,5 +24,7 @@ nodes:
   inputs:
     processed_results: ${line_process.output}
   aggregation: true
+id: template_eval_flow
+name: Template Evaluation Flow
 environment:
     python_requirements_txt: requirements.txt

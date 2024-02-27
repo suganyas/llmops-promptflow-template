@@ -10,5 +10,8 @@ def line_process(groundtruth: str, prediction: str):
     :param prediction: the prediction of a single line.
     """
 
+    processed_result = ""
+
     # Add your line processing logic here
-    return "Correct" if groundtruth.lower() == prediction.lower() else "Incorrect"
+
+    return processed_result
