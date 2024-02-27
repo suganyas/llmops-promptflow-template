@@ -1,25 +1,25 @@
 {
     "experiment": {
-            "chat_history": [
-              {
-                "inputs": {
-                  "question": "${data.chat_history[0].inputs.question}"
+        "chat_history": [
+          {
+            "inputs": {
+              "question": "${data.chat_history[0].inputs.question}"
+            },
+            "outputs": {
+              "answer": "${data.chat_history[0].outputs.answer}",
+              "llm_output": {
+                "content": "${data.chat_history[0].outputs.llm_output.content}",
+                "function_call": {
+                  "arguments": "${data.chat_history[0].outputs.llm_output.function_call.arguments}",
+                  "name": "${data.chat_history[0].outputs.llm_output.function_call.name}"
                 },
-                "outputs": {
-                    "answer": "${data.chat_history[0].outputs.answer}",
-                    "llm_output": {
-                      "content": "${data.chat_history[0].outputs.llm_output.content}",
-                      "function_call": {
-                        "arguments": "${data.chat_history[0].outputs.llm_output.function_call.arguments}",
-                        "name": "${data.chat_history[0].outputs.llm_output.function_call.name}"
-                      },
-                      "role": "${data.chat_history[0].outputs.llm_output.role}"
-                    }
-                  }
-                }
-            ],
-            "question": "${data.question}"
-    },
+                "role": "${data.chat_history[0].outputs.llm_output.role}"
+              }
+            }
+          }
+        ],
+        "question": "${data.question}"
+      },      
     "evaluation": {
         "evaluation": {
             "groundtruth": "${data.groudtruth}",
