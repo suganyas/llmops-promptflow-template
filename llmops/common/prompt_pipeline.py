@@ -149,6 +149,8 @@ def prepare_and_execute(
     mapping_file = open(data_mapping_config)
     mapping_config = json.load(mapping_file)
     exp_config_node = mapping_config["experiment"]
+    logger.info("exp_config_node:")
+    logger.info(exp_config_node)
 
     run_ids = []
     past_runs = []
