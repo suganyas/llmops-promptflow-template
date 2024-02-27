@@ -4,7 +4,7 @@
             "PROMPT_FLOW_CONFIG_NAME": "chat_function_call",
             "ENV_NAME": "pr",
             "DATA_PURPOSE": "pr_data",
-            "DATA_PATH":"data/data.jsonl",
+            "DATA_PATH":"data/data.json",
             "DATASET_NAME":"temp_dataset_chat1",
             "DATASET_DESC":"this dataset is for pr validation only"
         },
@@ -21,7 +21,7 @@
             "PROMPT_FLOW_CONFIG_NAME": "chat_function_call",
             "ENV_NAME": "dev",
             "DATA_PURPOSE": "training_data",
-            "DATA_PATH":"data/data.jsonl",
+            "DATA_PATH":"data/data.json",
             "DATASET_NAME":"chat_function_call_train",
             "DATASET_DESC":"this dataset is for prompt experiments"
         }
