@@ -1,7 +1,24 @@
 {
     "experiment": {
-        "question": "${data.question}",
-        "chat_history": "${data.chat_history}"
+            "chat_history": [
+              {
+                "inputs": {
+                  "question": "${data.chat_history[0].inputs.question}",
+                  "outputs": {
+                    "answer": "${data.chat_history[0].inputs.outputs.answer}",
+                    "llm_output": {
+                      "content": "${data.chat_history[0].inputs.outputs.llm_output.content}",
+                      "function_call": {
+                        "arguments": "${data.chat_history[0].inputs.outputs.llm_output.function_call.arguments}",
+                        "name": "${data.chat_history[0].inputs.outputs.llm_output.function_call.name}"
+                      },
+                      "role": "${data.chat_history[0].inputs.outputs.llm_output.role}"
+                    }
+                  }
+                }
+              }
+            ],
+            "question": "${data.question}"
     },
     "evaluation": {
         "evaluation": {
