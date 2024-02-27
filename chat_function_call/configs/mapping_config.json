@@ -1,0 +1,13 @@
+{
+    "experiment": {
+        "question": "${data.question}",
+        "chat_history": "${data.chat_history}"
+      },      
+    "evaluation": {
+        "evaluation": {
+            "groundtruth": "${data.groudtruth}",
+            "prediction": "${data.prediction}"
+        }
+    }
+
+}
