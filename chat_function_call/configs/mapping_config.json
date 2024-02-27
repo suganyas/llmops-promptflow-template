@@ -1,7 +1,6 @@
 {
     "experiment": {
-        "chat_history": "${data.chat_history}",
-        "question": "${data.question}"
+
       },      
     "evaluation": {
         "evaluation": {
